@@ -3,7 +3,7 @@ import std/[math, sets, strscans]
 type Position = tuple[x, y: int]
 
 proc updateTail(tail: var Position; head: Position) =
-  ## Update the tail position according head position.
+  ## Update the tail position according to head position.
   let dx = tail.x - head.x
   let dy = tail.y - head.y
   # Note that in the second part, both "dx" and "dy" may be equal to 2 or -2
