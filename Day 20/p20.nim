@@ -27,7 +27,7 @@ proc mix(nodes: seq[Node]) =
   for node in nodes:
     # Compute the shift.
     var shift = node.value mod m  # Reduce the shift to a value between 0 and "m".
-    # Choose the direction towards search the new position.
+    # Choose the direction in which to look for the new position.
     if shift > lim: shift = shift - count + 1
     elif shift < -lim: shift = count + shift - 1
     if shift == 0: continue
